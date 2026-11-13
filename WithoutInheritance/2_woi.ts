@@ -1,0 +1,20 @@
+class CreditCard{
+    creditBill(): void{
+        console.log("My credit card outstanding balance is 97000");
+    }
+}
+
+class AccountNumber{
+    accountNo(): void{
+        console.log("My account number is 10978945254622");
+    }
+
+    userInfo(): void{
+        let C = new CreditCard();
+        C.creditBill();
+        this.accountNo();
+    }
+}
+
+let A = new AccountNumber();
+A.userInfo();
